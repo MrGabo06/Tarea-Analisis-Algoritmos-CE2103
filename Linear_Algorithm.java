@@ -3,7 +3,7 @@ import java.util.Random;
 public class Linear_Algorithm {
     public static void main (String[] args){
         Random random = new Random();
-        int[] array = Randomize_Array(100);
+        int[] array = Randomize_Array(100000);
         int initial_time = LocalDateTime.now().getNano();
         linear_algorithm(array);
         int final_time = LocalDateTime.now().getNano();

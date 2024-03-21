@@ -33,7 +33,7 @@ public class Logarithmic_Algorithm {
     public static void main (String[] args){
         int initial_time = LocalDateTime.now().getNano();
         Logarithmic_Algorithm ob = new Logarithmic_Algorithm();
-        int[] arr = Quadratic_Algorithm.Randomize_Array(100);
+        int[] arr = Quadratic_Algorithm.Randomize_Array(100000);
         Quadratic_Algorithm.Bubble_Sort(arr);
         int n = arr.length;
         int number_to_search = arr[arr.length-1];

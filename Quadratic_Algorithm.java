@@ -2,7 +2,7 @@ import java.time.LocalDateTime;
 import java.util.Random;
 public class Quadratic_Algorithm {
     public static void main (String[] args){
-        int[] array = Randomize_Array(100);
+        int[] array = Randomize_Array(100000);
         int initial_time = LocalDateTime.now().getNano();
         /* Algoritmo*/
         Bubble_Sort(array);
