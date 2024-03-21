@@ -4,7 +4,7 @@ import java.io.*;
 
 public class Logarithmic_Algorithm {
     // Returns index of x if it is present in arr[].
-    int binarySearch(int arr[], int x)
+    int binarySearch(int[] arr, int x)
     {
         int l = 0, r = arr.length - 1;
         while (l <= r) {
@@ -33,10 +33,11 @@ public class Logarithmic_Algorithm {
     public static void main (String[] args){
         int initial_time = LocalDateTime.now().getNano();
         Logarithmic_Algorithm ob = new Logarithmic_Algorithm();
-        int arr[] = { 2, 3, 4, 10, 40 };
+        int[] arr = Quadratic_Algorithm.Randomize_Array(100);
+        Quadratic_Algorithm.Bubble_Sort(arr);
         int n = arr.length;
-        int x = 10;
-        int result = ob.binarySearch(arr, x);
+        int number_to_search = arr[arr.length-1];
+        int result = ob.binarySearch(arr, number_to_search);
         if (result == -1)
             System.out.println(
                     "Element is not present in array");
